@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My ATM App</title>
+</head>
+<body>
+    <div class="container-1">
+        <div class="flex-box-container-1">
+            <div>
+                <img src="image/menu.jpg" onclick="myFunction1()" class="menu">
+            </div>
+            <div>
+                <h1 style="font-family: Arial, Helvetica, sans-serif;">ATM</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <div class="flex-box-container-2">
+            <div class="atm-page">
+                <div class="heading">
+                    <h3 class="header-1" id="header">Sellect Transaction</h3>
+                </div>
+                    <div class="column-1">
+                        <div id="div1">
+                            <button onclick="createPreferencesTextChange(this)" class="glyphicon glyphicon-chevron-left" id="left-11" style="color: black;"></button><p id="left-1">Create Preferences</p>
+                        </div><br>
+                        <div id="div2">
+                            <button onclick="cashACheckTextChange(this)" class="glyphicon glyphicon-chevron-left" id="left-22" style="color: black;"></button><p id="left-2">Cash a Check</p><br>
+                        </div><br>
+                        <div id="div3">
+                            <button onclick="accountBalanceTextChange(this)" class="glyphicon glyphicon-chevron-left" id="left-33" style="color: black;"></button><p id="left-3">Account Balance</p><br>
+                        </div><br>
+                        <div id="div4">
+                            <button onclick="accountStatementTextChange(this)" class="glyphicon glyphicon-chevron-left" id="left-44" style="color: black;"></button><p id="left-4">Account Statements</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="column-2">
+                        <div id="div5">
+                            <p id="right-1">Withdrawal</p><button onclick="withdrawalTextChange()" class="glyphicon glyphicon-chevron-right" value="right-11" style="color: black;"></button><br>
+                        </div><br>
+                        <div id="div6">
+                            <p id="right-2" value="right-22">Deposit</p><button onclick="depositTextChange(this)" class="glyphicon glyphicon-chevron-right" style="color: black;"></button><br>
+                        </div><br>
+                        <div id="div7">
+                            <p id="right-3">Fast Cash (N5000)</p><button onclick="fastCashTextChange(this)" class="glyphicon glyphicon-chevron-right" id="right-33" style="color: black;"></button><br>
+                        </div><br>
+                        <div id="div8">
+                            <p id="right-4">Transfer</p><button onclick="transferTextChange(this)" class="glyphicon glyphicon-chevron-right" id="right-44" style="color: black;"></button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    
+        <div class="container-3">
+            <div class="flex-box-container-3">
+                <div class="col-1">
+                    <div>
+                        <button id="b1" type="button" style="border: 2px solid black;" onclick="btn1()">1</button>
+                    </div>
+                    <div>
+                        <button id="b4" type="button" style="border: 2px solid black;" onclick="btn4()">4</button>
+                    </div>
+                    <div>
+                        <button id="b7" type="button" style="border: 2px solid black;" onclick="btn7()">7</button>
+                    </div>
+                    <div>
+                        <button id="b" type="button" style="border: 2px solid black;" onclick="btn()">N</button>
+                    </div>  
+                </div>
+                <br>
+                <div class="col-2">
+                    <div>
+                        <button id="b2" type="button" style="border: 2px solid black;" onclick="btn2()">2</button>
+                    </div>
+                    <div>
+                        <button id="b5" type="button" style="border: 2px solid black;" onclick="btn5()">5</button>
+                    </div>
+                    <div>
+                        <button id="b8" type="button" style="border: 2px solid black;" onclick="btn8()">8</button>
+                    </div>
+                    <div>
+                        <button id="b0" type="button" style="border: 2px solid black;" onclick="btn0()">0</button>
+                    </div>
+                </div>
+                <br>
+                <div class="col-3">
+                    <div>
+                        <button id="b3" type="button" style="border: 2px solid black;" onclick="btn3()">3</button>
+                    </div>
+                    <div>
+                        <button id="b6" type="button" style="border: 2px solid black;" onclick="btn6()">6</button>
+                    </div>
+                    <div>
+                        <button id="b9" type="button" style="border: 2px solid black;" onclick="btn9()">9</button>
+                    </div>
+                    <div>
+                        <button id="b000" type="button" style="border: 2px solid black;" onclick="btn000()">000</button>
+                    </div>                   
+                </div>
+                <br>
+                <div class="col-4">
+                    <div>
+                        <button id="bCancel" type="button" style="border: 1px solid black;" class="btn btn-danger" onclick="btnCancel()">CANCEL</button>
+                    </div>
+                    <div>
+                        <button id="bClear" type="button" style="border: 1px solid black;" class="btn btn-warning" onclick="btnClear()">CLEAR</button>
+                    </div>
+                    <div>
+                        <button id="bEnter" type="button" style="border: 1px solid black;" class="btn btn-success" onclick="btnEnter()">ENTER</button>
+                    </div>
+                    <div>
+                        <button id="b" type="button" style="border: 1px solid black;" onclick="btn()">NULL</button>
+                    </div>                 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
